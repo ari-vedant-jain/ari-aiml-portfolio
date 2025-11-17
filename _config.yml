@@ -12,8 +12,8 @@ kramdown:
   syntax_highlighter: rouge
 
 # GitHub Pages settings
-baseurl: ""
-url: ""
+baseurl: "/aiml-portfolio"
+url: "https://ari-vedant-jain.github.io"
 
 # Navigation
 header_pages:
