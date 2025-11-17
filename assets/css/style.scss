@@ -3,51 +3,97 @@
 
 @import "{{ site.theme }}";
 
-/* Simple, clean custom styling */
+/* Enhanced styling for professional portfolio */
 
-/* Better spacing */
+/* Better spacing and typography */
 .main-content {
   max-width: 64rem;
   padding: 2rem 1rem;
   margin: 0 auto;
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 
-/* Headings */
+/* Page header customization */
+.page-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 4rem 1rem;
+}
+
+.project-name {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.project-tagline {
+  font-size: 1.25rem;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+/* Headings with better styling */
 .main-content h1 {
   margin-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 600;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
 }
 
 .main-content h2 {
   margin-top: 3rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #e1e4e8;
-  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  padding-top: 1rem;
+  border-bottom: 2px solid #e1e4e8;
+  font-size: 2rem;
   font-weight: 600;
+  color: #34495e;
 }
 
 .main-content h3 {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #5a6c7d;
+}
+
+/* Blockquotes for special notes */
+.main-content blockquote {
+  border-left: 4px solid #667eea;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: linear-gradient(to right, rgba(102, 126, 234, 0.05), transparent);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #5a6c7d;
+}
+
+.main-content blockquote strong {
+  color: #667eea;
   font-weight: 600;
 }
 
-/* Links */
+/* Enhanced links */
 .main-content a {
-  color: #0366d6;
+  color: #667eea;
   text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 
 .main-content a:hover {
-  text-decoration: underline;
+  color: #764ba2;
+  border-bottom: 2px solid #764ba2;
+  text-decoration: none;
 }
 
-/* Lists */
+/* List items with better spacing */
 .main-content ul,
 .main-content ol {
   margin: 1.5rem 0;
@@ -55,34 +101,52 @@
 }
 
 .main-content li {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+/* Featured project links */
+.main-content ul li a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
 }
 
 /* Horizontal rules */
 .main-content hr {
-  height: 1px;
+  height: 2px;
   padding: 0;
-  margin: 2rem 0;
-  background-color: #e1e4e8;
+  margin: 3rem 0;
+  background: linear-gradient(to right, transparent, #667eea, transparent);
   border: 0;
 }
 
-/* Code */
+/* Code styling */
 .main-content code {
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.5rem;
   margin: 0;
-  font-size: 85%;
-  background-color: rgba(27, 31, 35, 0.05);
-  border-radius: 3px;
+  font-size: 90%;
+  background-color: rgba(102, 126, 234, 0.1);
+  border-radius: 4px;
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
 }
 
 .main-content pre {
-  padding: 1rem;
+  padding: 1.5rem;
   overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f6f8fa;
-  border-radius: 3px;
+  font-size: 90%;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.main-content pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 /* Tables */
@@ -90,27 +154,58 @@
   display: block;
   width: 100%;
   overflow: auto;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   border-spacing: 0;
   border-collapse: collapse;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .main-content table th {
   font-weight: 600;
-  background-color: #f6f8fa;
-  padding: 0.5rem 1rem;
-  border: 1px solid #d0d7de;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  text-align: left;
 }
 
 .main-content table td {
-  padding: 0.5rem 1rem;
-  border: 1px solid #d0d7de;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e1e4e8;
 }
 
-/* Responsive */
+.main-content table tr:last-child td {
+  border-bottom: none;
+}
+
+.main-content table tr:hover {
+  background-color: rgba(102, 126, 234, 0.05);
+}
+
+/* Strong text emphasis */
+.main-content strong {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
   .main-content {
     padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .page-header {
+    padding: 2rem 1rem;
+  }
+
+  .project-name {
+    font-size: 2rem;
+  }
+
+  .project-tagline {
+    font-size: 1rem;
   }
 
   .main-content h1 {
@@ -119,6 +214,10 @@
 
   .main-content h2 {
     font-size: 1.5rem;
+  }
+
+  .main-content h3 {
+    font-size: 1.25rem;
   }
 }
 
