@@ -25,6 +25,10 @@ I specialize in building **agentic AI systems** for enterprises—from autonomou
 
 ---
 
+<div class="three-column-section" markdown="1">
+
+<div class="column" markdown="1">
+
 ## 🔥 Featured Projects
 
 - [Multi-Agent RAG with Security-Aware Orchestration](projects/rag-multi-agent)
@@ -33,39 +37,45 @@ I specialize in building **agentic AI systems** for enterprises—from autonomou
 - [MCTS-Enhanced Answer Selection in RAG](projects/mcts-rag)
 - [Graph Neural Network Fraud Detection on SageMaker](projects/gnn-fraud)
 
----
+</div>
 
-## 🛡 AI Security & Red Teaming
+<div class="column" markdown="1">
 
-I focus heavily on the safety and robustness side of AI:
+## 🛡 AI Security
+
+**Focus areas:**
 
 - LLM red-teaming and automated adversarial testing
 - Prompt-injection detection and remediation
-- Guardrails for hallucination mitigation and policy enforcement
-- Secure deployment patterns on Amazon Bedrock, Databricks Mosaic AI, and other enterprise platforms
+- Guardrails for hallucination mitigation
+- Secure deployment patterns
 
-Deep dives:
+**Deep dives:**
 - [LLM Red Teaming & Guardrails](security/llm-red-teaming)
-- [Prompt-Injection TDD & Vulnerability Remediation](security/prompt-injection-tdd)
+- [Prompt-Injection TDD](security/prompt-injection-tdd)
 
----
+</div>
 
-## 📚 Publications & Writing
+<div class="column" markdown="1">
 
-I publish regularly on:
+## 📚 Publications
 
-- Amazon Web Services (AWS) blogs
+**Platforms:**
+
+- AWS blogs
 - Protect AI blogs
-- Medium — RAG, multi-agent systems, AI security, and LLM optimization
-- Community content via GoPenAI and others
-- YouTube — Video tutorials and technical deep dives
+- Medium
+- YouTube
 
-See:
+**See:**
 - [AWS AI/ML Publications](publications/aws-blogs)
-- [Protect AI Security Articles](publications/protectai-blogs)
-- [Medium Articles on RAG, Agents & AI Security](publications/medium-articles)
-- [Talks, Demos & Videos](publications/talks-videos)
+- [Protect AI Articles](publications/protectai-blogs)
+- [Medium Articles](publications/medium-articles)
 - [YouTube Channel](https://www.youtube.com/@ari.in_media_res) 🎥
+
+</div>
+
+</div>
 
 ---
 

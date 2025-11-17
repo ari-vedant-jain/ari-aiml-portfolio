@@ -213,7 +213,67 @@ body {
   color: #2c3e50;
 }
 
+/* Three column layout */
+.three-column-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.three-column-section .column {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e1e4e8;
+  transition: all 0.3s ease;
+}
+
+.three-column-section .column:hover {
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.15);
+  transform: translateY(-4px);
+  border-color: #667eea;
+}
+
+.three-column-section .column h2 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.three-column-section .column ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.three-column-section .column li {
+  margin: 0.75rem 0;
+  line-height: 1.6;
+}
+
+.three-column-section .column a {
+  color: #667eea;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.three-column-section .column a:hover {
+  color: #764ba2;
+  border-bottom-color: #764ba2;
+}
+
 /* Responsive design */
+@media (max-width: 1024px) {
+  .three-column-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .main-content {
     padding: 1rem;
@@ -242,6 +302,14 @@ body {
 
   .main-content h3 {
     font-size: 1.25rem;
+  }
+
+  .three-column-section {
+    gap: 1.5rem;
+  }
+
+  .three-column-section .column {
+    padding: 1.5rem;
   }
 }
 
