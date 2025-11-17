@@ -1,124 +1,88 @@
----
-layout: default
-title: RAG Multi-Agent System
----
-
-# RAG Multi-Agent System
+# Multi-Agent RAG with Security-Aware Orchestration
 
 ## Overview
 
-An advanced Retrieval-Augmented Generation (RAG) system powered by autonomous agents that collaborate to handle complex queries requiring multi-step reasoning, tool usage, and dynamic information retrieval.
+This project explores how to enhance Retrieval-Augmented Generation (RAG) using **multi-agent workflows** and integrated **security checks**, combining retrieval, synthesis, and policy enforcement into a single coordinated system.
 
-## Key Features
-
-- **Multi-Agent Architecture**: Specialized agents for retrieval, reasoning, and synthesis
-- **Dynamic Tool Selection**: Agents autonomously select appropriate tools and data sources
-- **Context Management**: Intelligent context window management for long conversations
-- **Hybrid Search**: Combines dense embeddings, sparse retrieval, and graph-based search
-- **Self-Correction**: Agents validate and refine their outputs iteratively
-
-## Architecture
-
-![RAG Multi-Agent Architecture](../diagrams/rag-architecture.png)
-
-### Agent Roles
-
-1. **Query Planner Agent**
-   - Decomposes complex queries into sub-tasks
-   - Determines optimal execution strategy
-   - Manages agent coordination
-
-2. **Retrieval Agent**
-   - Executes semantic search across multiple data sources
-   - Ranks and filters relevant documents
-   - Handles re-ranking and relevance scoring
-
-3. **Reasoning Agent**
-   - Synthesizes information from retrieved documents
-   - Performs multi-hop reasoning
-   - Validates logical consistency
-
-4. **Synthesis Agent**
-   - Generates final responses
-   - Ensures coherence and completeness
-   - Cites sources appropriately
-
-## Technical Stack
-
-- **LLM Framework**: LangGraph, LangChain
-- **Vector Database**: Pinecone, Weaviate
-- **Embeddings**: OpenAI Ada-002, Cohere Embed
-- **Orchestration**: Python, FastAPI
-- **Monitoring**: LangSmith, Weights & Biases
-
-## Implementation Highlights
-
-### Agentic Workflow
-
-```python
-class MultiAgentRAG:
-    def __init__(self):
-        self.query_planner = QueryPlannerAgent()
-        self.retrieval_agent = RetrievalAgent()
-        self.reasoning_agent = ReasoningAgent()
-        self.synthesis_agent = SynthesisAgent()
-    
-    async def process_query(self, query: str):
-        # Plan execution strategy
-        plan = await self.query_planner.create_plan(query)
-        
-        # Execute retrieval
-        documents = await self.retrieval_agent.retrieve(plan)
-        
-        # Reason over documents
-        insights = await self.reasoning_agent.analyze(documents)
-        
-        # Synthesize final response
-        response = await self.synthesis_agent.generate(insights)
-        
-        return response
-```
-
-### Hybrid Search Strategy
-
-- **Dense Retrieval**: Semantic similarity using embeddings
-- **Sparse Retrieval**: BM25 for keyword matching
-- **Graph Traversal**: Relationship-based document discovery
-- **Reranking**: Cross-encoder models for final ranking
-
-## Results & Impact
-
-- **Accuracy**: 87% improvement in complex query handling vs. baseline RAG
-- **Latency**: Sub-2-second response time for 95th percentile
-- **User Satisfaction**: 4.6/5 rating from production users
-- **Cost Efficiency**: 40% reduction in LLM API costs through intelligent caching
-
-## Challenges & Solutions
-
-### Challenge 1: Agent Coordination Overhead
-**Solution**: Implemented asynchronous agent communication with message queues
-
-### Challenge 2: Context Window Limitations
-**Solution**: Dynamic context pruning and hierarchical summarization
-
-### Challenge 3: Hallucination Detection
-**Solution**: Multi-agent validation with source attribution requirements
-
-## Future Enhancements
-
-- [ ] Integration with real-time data streams
-- [ ] Multi-modal agent support (images, audio)
-- [ ] Federated learning for privacy-preserving RAG
-- [ ] Automated agent fine-tuning based on user feedback
-
-## Resources
-
-- [GitHub Repository](#)
-- [Technical Blog Post](#)
-- [Demo Video](#)
-- [API Documentation](#)
+It builds on ideas from my article  
+**“Enhancing Retrieval Augmented Generation (RAG) with Multi-Agent Intelligence and Security”**.
 
 ---
 
-[← Back to Projects](../index.html#featured-projects)
+## Problem
 
+Traditional RAG systems often:
+
+- Treat retrieval and generation as a simple two-step pipeline.  
+- Lack explicit **roles** for evaluation, critique, or policy enforcement.  
+- Provide limited defenses against **prompt-injection** and **unsafe tool use**.  
+
+The goal was to design a more robust architecture where different agents specialize in:
+
+- Retrieving relevant context  
+- Generating candidate answers  
+- Evaluating quality and safety  
+- Enforcing security and policy constraints  
+
+---
+
+## Approach & Architecture
+
+The system is organized as a **multi-agent orchestration layer**:
+
+1. **Query Understanding Agent**  
+   - Normalizes user queries  
+   - Detects potential injection patterns or adversarial intent
+
+2. **Retriever Agent**  
+   - Uses a vector store to fetch semantically similar documents  
+   - Optionally augments with web / external tools
+
+3. **Answer Generation Agent**  
+   - Uses an LLM to synthesize an answer from retrieved context  
+   - Can produce multiple candidate responses
+
+4. **Evaluator / Critic Agent**  
+   - Checks factual alignment with context  
+   - Scores candidates on relevance, completeness, and clarity
+
+5. **Security / Policy Agent**  
+   - Screens for policy violations, sensitive data leakage, and unsafe instructions  
+   - Applies guardrails and fallback logic when needed
+
+---
+
+## Techniques & Technologies
+
+- **LLM orchestration:** multi-agent patterns for query, retrieval, generation, evaluation, and security  
+- **RAG:** vector retrieval plus contextual grounding  
+- **Security checks:** prompt-level filtering, injection detection heuristics, and policy rules  
+
+Possible stack (depending on environment):
+
+- Python  
+- LLM of choice (e.g., Llama, GPT-family, or other open-source LLMs)  
+- Vector database (e.g., Pinecone, OpenSearch, FAISS)  
+- Orchestration framework (custom or agent frameworks)  
+
+---
+
+## Outcomes
+
+- More resilient to prompt-injection and unsafe requests compared to naive RAG.  
+- Clear separation of responsibilities between **quality-focused** and **security-focused** agents.  
+- Easier to extend with additional agents (e.g., tool-use agent, compliance agent).
+
+---
+
+## My Role
+
+- Designed the **multi-agent architecture** and security-aware workflow.  
+- Defined evaluation and security criteria for the evaluator and policy agents.  
+- Authored the technical write-up and reference patterns for future implementations.
+
+---
+
+## Related Reading
+
+- [Enhancing RAG with Multi-Agent Intelligence and Security](https://medium.com/@ari_in_media_res/enhancing-retrieval-augmented-generation-rag-with-multi-agent-intelligence-and-security-a465b1eac7ea)

@@ -1,51 +1,64 @@
 # **Ari Jain — AI/ML Portfolio**
-**AI Specialist | RAG Systems | Multi-Agent Architectures | AI Security & LLM Red Teaming | Distributed ML**
 
-Welcome to my technical portfolio.  
-I build scalable Retrieval-Augmented Generation systems, agentic LLM pipelines, AI security frameworks, and distributed ML infrastructure for enterprise AI adoption.
+**AI Specialist • RAG & Multi-Agent Architectures • AI Security & LLM Red Teaming • Distributed ML & MLOps**
+
+I design and ship production-grade AI systems for enterprises… from scalable RAG and multi-agent workflows to AI security, red teaming, and distributed training on cloud accelerators. 
+
+My background spans:
+- **AWS** – Led global initiatives for Amazon SageMaker Human-in-the-Loop ML and 2P models, plus Ray + AWS accelerator integrations highlighted at Ray Summit ’23.
+- **Protect AI** – Building AI security capabilities for LLMs and gen-AI workloads: automated red teaming, guardrails, and endpoint scanning for platforms like Amazon Bedrock and Databricks Mosaic AI.
+- **Public technical writing** – 20+ articles spanning RAG, multi-agent systems, AI security, prompt-injection testing, and distributed ML infrastructure.
 
 ---
 
 ## 🔥 Featured Projects
-- **Multi-Agent RAG with Security Layers**  
-- **LLM Guardrails for DeepSeek-R1 (AWS Bedrock)**  
-- **Databricks Mosaic AI Red Teaming (ProtectAI Recon)**  
-- **MCTS-Enhanced Answer Ranking for RAG**  
-- **Graph Neural Network Fraud Detection**
 
-Explore full case studies → [/projects](./projects)
+- [Multi-Agent RAG with Security-Aware Orchestration](./projects/rag-multi-agent.md)  
+- [LLM Guardrails for DeepSeek-R1 on Amazon Bedrock](./projects/deepseek-guardrails.md)  
+- [Automated Red Teaming for Databricks Mosaic AI (Protect AI Recon)](./projects/databricks-recon.md)  
+- [MCTS-Enhanced Answer Selection in RAG](./projects/mcts-rag.md)  
+- [Graph Neural Network Fraud Detection on SageMaker](./projects/gnn-fraud.md)  
 
----
-
-## 📚 Publications
-- 20+ articles on AI Security, RAG, Distributed ML  
-- Featured by AWS, ProtectAI, GoPenAI  
-- Highlighted by Ion Stoica at Ray Summit ’23
-
-Full list → [/publications](./publications)
+More details → [Projects](./projects)
 
 ---
 
-## 🛡 AI Security
-- LLM red teaming (DeepSeek, Mosaic AI, Bedrock)  
-- Prompt-injection defense frameworks  
-- Automated vulnerability scanning for model endpoints  
-- Guardrail orchestration (regex + semantic + policy)
+## 🛡 AI Security & Red Teaming
 
-Details → [/security](./security)
+I focus heavily on the safety and robustness side of AI:
 
----
+- LLM red-teaming and automated adversarial testing  
+- Prompt-injection detection and remediation  
+- Guardrails for hallucination mitigation and policy enforcement  
+- Secure deployment patterns on Amazon Bedrock, Databricks Mosaic AI, and other enterprise platforms  
 
-## 🎥 Talks & Demos
-- ProtectAI Recon demos  
-- DeepSeek R1 guardrail walkthrough  
-- Ray + AWS accelerator integration
-
-Videos → [/publications/talks-videos.md](./publications/talks-videos.md)
+Deep dives:
+- [LLM Red Teaming & Guardrails](./security/llm-red-teaming.md)  
+- [Prompt-Injection TDD & Vulnerability Remediation](./security/prompt-injection-tdd.md)  
 
 ---
 
-## 📩 Contact  
-Let’s collaborate on AI architecture, RAG, security, or partner ecosystems.  
-**Email:** your email  
-**LinkedIn:** your profile
+## 📚 Publications & Writing
+
+I publish regularly on:
+
+- Amazon Web Services (AWS) blogs  
+- Protect AI blogs  
+- Medium — RAG, multi-agent systems, AI security, and LLM optimization  
+- Community content via GoPenAI and others
+
+See:
+- [AWS AI/ML Publications](./publications/aws-blogs.md)  
+- [Protect AI Security Articles](./publications/protectai-blogs.md)  
+- [Medium Articles on RAG, Agents & AI Security](./publications/medium-articles.md)  
+- [Talks, Demos & Videos](./publications/talks-videos.md)  
+
+---
+
+## 👤 About & Contact
+
+Want to collaborate on AI architecture, RAG platforms, AI security, or partner ecosystems?
+
+- [About Me](./about/summary.md)  
+- [Contact](./about/contact.md)  
+
