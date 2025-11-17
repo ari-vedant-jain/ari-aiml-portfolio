@@ -25,56 +25,62 @@ I specialize in building **agentic AI systems** for enterprises—from autonomou
 
 ---
 
-<div class="three-column-section" markdown="1">
+<div class="three-column-section">
+<div class="column">
 
-<div class="column" markdown="1">
+<h2>🔥 Featured Projects</h2>
 
-## 🔥 Featured Projects
-
-- [Multi-Agent RAG with Security-Aware Orchestration](projects/rag-multi-agent)
-- [LLM Guardrails for DeepSeek-R1 on Amazon Bedrock](projects/deepseek-guardrails)
-- [Automated Red Teaming for Databricks Mosaic AI (Protect AI Recon)](projects/databricks-recon)
-- [MCTS-Enhanced Answer Selection in RAG](projects/mcts-rag)
-- [Graph Neural Network Fraud Detection on SageMaker](projects/gnn-fraud)
-
-</div>
-
-<div class="column" markdown="1">
-
-## 🛡 AI Security
-
-**Focus areas:**
-
-- LLM red-teaming and automated adversarial testing
-- Prompt-injection detection and remediation
-- Guardrails for hallucination mitigation
-- Secure deployment patterns
-
-**Deep dives:**
-- [LLM Red Teaming & Guardrails](security/llm-red-teaming)
-- [Prompt-Injection TDD](security/prompt-injection-tdd)
+<ul>
+<li><a href="projects/rag-multi-agent">Multi-Agent RAG with Security-Aware Orchestration</a></li>
+<li><a href="projects/deepseek-guardrails">LLM Guardrails for DeepSeek-R1 on Amazon Bedrock</a></li>
+<li><a href="projects/databricks-recon">Automated Red Teaming for Databricks Mosaic AI (Protect AI Recon)</a></li>
+<li><a href="projects/mcts-rag">MCTS-Enhanced Answer Selection in RAG</a></li>
+<li><a href="projects/gnn-fraud">Graph Neural Network Fraud Detection on SageMaker</a></li>
+</ul>
 
 </div>
+<div class="column">
 
-<div class="column" markdown="1">
+<h2>🛡 AI Security</h2>
 
-## 📚 Publications
+<p><strong>Focus areas:</strong></p>
 
-**Platforms:**
+<ul>
+<li>LLM red-teaming and automated adversarial testing</li>
+<li>Prompt-injection detection and remediation</li>
+<li>Guardrails for hallucination mitigation</li>
+<li>Secure deployment patterns</li>
+</ul>
 
-- AWS blogs
-- Protect AI blogs
-- Medium
-- YouTube
-
-**See:**
-- [AWS AI/ML Publications](publications/aws-blogs)
-- [Protect AI Articles](publications/protectai-blogs)
-- [Medium Articles](publications/medium-articles)
-- [YouTube Channel](https://www.youtube.com/@ari.in_media_res) 🎥
+<p><strong>Deep dives:</strong></p>
+<ul>
+<li><a href="security/llm-red-teaming">LLM Red Teaming & Guardrails</a></li>
+<li><a href="security/prompt-injection-tdd">Prompt-Injection TDD</a></li>
+</ul>
 
 </div>
+<div class="column">
 
+<h2>📚 Publications</h2>
+
+<p><strong>Platforms:</strong></p>
+
+<ul>
+<li>AWS blogs</li>
+<li>Protect AI blogs</li>
+<li>Medium</li>
+<li>YouTube</li>
+</ul>
+
+<p><strong>See:</strong></p>
+<ul>
+<li><a href="publications/aws-blogs">AWS AI/ML Publications</a></li>
+<li><a href="publications/protectai-blogs">Protect AI Articles</a></li>
+<li><a href="publications/medium-articles">Medium Articles</a></li>
+<li><a href="https://www.youtube.com/@ari.in_media_res">YouTube Channel 🎥</a></li>
+</ul>
+
+</div>
 </div>
 
 ---
