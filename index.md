@@ -5,16 +5,23 @@ title: Home
 
 # **Ari Vedant Jain — AI/ML Portfolio**
 
-**AI Technologist • RAG & Multi-Agent Architectures • AI Security & LLM Red Teaming • Distributed ML & MLOps**
+**AI Technologist • Agentic AI & Multi-Agent Systems • AI Security & LLM Red Teaming**
 
 > My name is Vedant Jain, but I prefer to go by **Ari**.
 
-I design and ship production-grade AI systems for enterprises… from scalable RAG and multi-agent workflows to AI security, red teaming, and distributed training on cloud accelerators.
+I specialize in building **agentic AI systems** for enterprises—from autonomous multi-agent workflows and RAG architectures to AI security, red teaming, and production-grade LLM deployments.
 
-My background spans:
-- **AWS** – Led global initiatives for Amazon SageMaker Human-in-the-Loop ML and 2P models, plus Ray + AWS accelerator integrations highlighted at Ray Summit ’23.
+## 💼 Experience
+
 - **Protect AI** – Building AI security capabilities for LLMs and gen-AI workloads: automated red teaming, guardrails, and endpoint scanning for platforms like Amazon Bedrock and Databricks Mosaic AI.
-- **Public technical writing** – 20+ articles spanning RAG, multi-agent systems, AI security, prompt-injection testing, and distributed ML infrastructure.
+
+- **AWS** – Led global initiatives for Amazon SageMaker Human-in-the-Loop ML and 2P models, plus Ray + AWS accelerator integrations highlighted at Ray Summit '23.
+
+- **Databricks** – Worked on agentic AI solutions and MLOps integrations for enterprise customers deploying multi-agent systems on Databricks platform.
+
+- **Cloudera** – Contributed to AI/ML platform capabilities and enterprise data science workflows for large-scale deployments.
+
+- **Public technical writing** – 20+ articles spanning agentic AI, RAG, multi-agent systems, AI security, prompt-injection testing, and distributed ML infrastructure.
 
 ---
 
